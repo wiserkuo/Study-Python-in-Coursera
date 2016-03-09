@@ -45,5 +45,5 @@ More details :
 https://docs.python.org/2.7/c-api/index.html  
 https://docs.python.org/3/c-api/index.html  
 
-write both fit with python 2.x and 3.x  
+write fit with both python 2.x and 3.x  
 http://python3porting.com/cextensions.html
