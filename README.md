@@ -1,4 +1,8 @@
+base on linux mint and gcc.
+*may work on OSX.
+
 # build
+use python 2.7  
 $ gcc -fPIC wrap.c example.c -o example.so -shared  -I/usr/include/python2.7 -I/usr/lib/python2.7/config
 
 # enter python
