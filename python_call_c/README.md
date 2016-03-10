@@ -47,3 +47,7 @@ https://docs.python.org/3/c-api/index.html
 
 write fit with both python 2.x and 3.x  
 http://python3porting.com/cextensions.html
+
+Note :
+reference counter
+callback
