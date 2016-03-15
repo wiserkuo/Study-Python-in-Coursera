@@ -20,7 +20,7 @@ C. Initialization function
 ### 2. Write setup.py (for building C files.)
 To avoid platform dependency problem, I strongly suggested to use python lib "distutils".  
 
-for python 2.x
+for python 2.x  
 $ python setup.py build  
 
 for python 3.x  
