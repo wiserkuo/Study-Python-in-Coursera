@@ -1,9 +1,4 @@
-# Others I (cython)  
-http://cython.org/  
-Have not tried yet.
-# Others II (pyrex)  
-Have not tried yet.
-# Others III (swig)  
+# Others I (swig)  
 http://swig.org/index.php  
 But some people got problems with swig (including me), if you can not solve it quickly, try other ways.  
 ### 0. install swig  
@@ -16,7 +11,14 @@ You can omit this step by fill in swig parameters in setup.py
 To avoid platform dependency problem, I strongly suggested to use python lib "distutils".  
 distutils support swig.
 
-# Others IV (boost.python)  
+# Others II (boost.python)  
 http://www.boost.org/doc/libs/master/libs/python/doc/html/index.html  
 Have not tried yet.  
 If you are familiar with boost lib, try this.  
+
+# Others III (cython)  
+http://cython.org/  
+Have not tried yet.  
+
+# Others IV (pyrex)  
+Have not tried yet.  
