@@ -28,47 +28,30 @@ $ python3 setup.py build
 
 then go to "./build/" to find what you need.  
 
-# Method II (ctypes)  
-
-# Others I (cython)  
-
-# Others II (pyrex)  
-
-# Others III (swig)  
-http://swig.org/index.php  
-But some people got problems with swig (including me), if you can not solve it quickly, try other ways.  
-### 0. install swig  
-### 1. write example.i  
-swig use example.i to generate wrap.c
-### 2. run swig
-You can omit this step by fill in swig parameters in setup.py  
-### 3. Write setup.py (for building C files.)  
-To avoid platform dependency problem, I strongly suggested to use python lib "distutils".  
-distutils support swig.
-
-# Others IV (boost.python)  
-http://www.boost.org/doc/libs/master/libs/python/doc/html/index.html  
-Have not tried yet.  
-If you are familiar with boost lib, try this.  
-
-# enter python
+### enter python
 for python 2.x  
 $ python  
-
-Python 2.7.6 (default, Jun 22 2015, 17:58:13)  
-[GCC 4.8.2] on linux2  
-Type "help", "copyright", "credits" or "license" for more information.  
-\>>> import example  
-\>>> example.fact(6)  
-720
 
 for python 3.x  
 $ python3  
 
-Python 3.4.3 (default, Oct 14 2015, 20:28:29)  
-[GCC 4.8.4] on linux  
-Type "help", "copyright", "credits" or "license" for more information.  
 \>>> import example  
+\>>> example.fact(6)  
+720
+
+# Method II (ctypes in python)  
+### build  
+$ gcc -fPIC -o example.so -shared example.c  
+
+### enter python
+for python 2.x  
+$ python  
+
+for python 3.x  
+$ python3  
+
+\>>> from ctypes import *
+\>>> example = cdll.LoadLibrary("./example.so")
 \>>> example.fact(6)  
 720
 
