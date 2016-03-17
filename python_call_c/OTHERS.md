@@ -19,6 +19,7 @@ If you are familiar with boost lib, try this.
 # Others III (cython)  
 http://cython.org/  
 Have not tried yet.  
+Infact, cython is another language but very similiar to python.
 
 # Others IV (pyrex)  
 Have not tried yet.  
